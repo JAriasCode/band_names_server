@@ -21,7 +21,6 @@
             console.log('Perdimos comunicación con el servidor');
         });
 
-
         socket.emit('mensaje', { nombre: 'Jeff' } );
 
         socket.on('nuevo-mensaje', function( payload ){
@@ -33,7 +32,9 @@
             console.table( bands );
         });
 
-
+        socket.on('enviar-mensaje', function() {
+            io.emit('nuevo-mensaje', 'Holi');
+        });
 
 
     </script>
