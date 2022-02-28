@@ -1,26 +1,19 @@
 {
-  "name": "band_names_server",
+  "name": "01-band_names_server",
   "version": "1.0.0",
-  "description": "Backend server for the band names flutter app",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "start:dev": "nodemon index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JAriasCode/band_names_server.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JAriasCode/band_names_server/issues"
-  },
-  "homepage": "https://github.com/JAriasCode/band_names_server#readme",
   "dependencies": {
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.3.0"
   }
 }
