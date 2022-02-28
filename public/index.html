@@ -32,7 +32,7 @@
             console.table( bands );
         });
 
-        socket.on('enviar-mensaje', function() {
+        socket.on('enviar-mensaje', (payload) => {
             io.emit('nuevo-mensaje', 'Holi');
         });
 
